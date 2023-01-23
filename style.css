@@ -1,0 +1,42 @@
+.game, .result{
+    width: 100%;
+    background-color: #2b87d1;
+    color:white;
+    text-align: center;
+    height:540px;
+}
+
+.icon{
+    width:80px;
+    height: 80px;
+    margin-top:150px;
+    margin-bottom: 30px;
+}
+
+.title, .resultText{
+    font-size: 80px;
+}
+
+.content{
+    font-size:24px;
+}
+
+.hidden{
+    display: none;
+}
+
+.red{
+    background-color: #ce2636;
+}
+
+.green{
+    background-color: #4bdb6a;
+}
+
+.active{
+    background-color: white !important; 
+    transition: all 0.1s;
+}
+
+
+

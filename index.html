@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HumanBenchmark</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body onselectstart="return false" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HumanBenchmark</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="game">
+        <img class="icon" src="./img/thunder.png">
+        <h1 class="title">반응속도 테스트</h1>
+        <p class="content">화면이 초록색이 되면 빠르게 클릭하세요</p>
+    </div>
+
+
+    <div class="result hidden">
+        <img class="icon" style="margin-top:100px;" src="./img/thunder.png">
+        <h5>반응속도</h5>
+        <h1 class="resultText">000ms</h1>
+        <p style="margin-top:20px">기록을 저장하여 비교하세요</p>
+        <button type="button" class="btn saveBtn" style="background-color:#ffd154; width:150px; height:50px; font-size: 18px; font-weight: bold;" onmouseover="event.target.classList.add('active')" onmouseleave="event.target.classList.remove('active')">기록저장</button>
+        <button type="button" class="btn restartBtn" style="background-color:#95c3e8; width:150px; height:50px; font-size: 18px; font-weight: bold;" onmouseover="event.target.classList.add('active')" onmouseleave="event.target.classList.remove('active')">다시하기</button>
+
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
