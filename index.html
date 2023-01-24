@@ -10,7 +10,7 @@
 
 </head>
 
-<body onselectstart="return false" >
+<body onselectstart="return false" style="background-color:#e6e8f4;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">HumanBenchmark</a>
@@ -41,10 +41,21 @@
         <h5>반응속도</h5>
         <h1 class="resultText">000ms</h1>
         <p style="margin-top:20px">기록을 저장하여 비교하세요</p>
-        <button type="button" class="btn saveBtn" style="background-color:#ffd154; width:150px; height:50px; font-size: 18px; font-weight: bold;" onmouseover="event.target.classList.add('active')" onmouseleave="event.target.classList.remove('active')">기록저장</button>
-        <button type="button" class="btn restartBtn" style="background-color:#95c3e8; width:150px; height:50px; font-size: 18px; font-weight: bold;" onmouseover="event.target.classList.add('active')" onmouseleave="event.target.classList.remove('active')">다시하기</button>
+        <button type="button" class="btn saveBtn"
+            style="background-color:#ffd154; width:150px; height:50px; font-size: 18px; font-weight: bold;"
+            onmouseover="event.target.classList.add('Active')"
+            onmouseleave="event.target.classList.remove('Active')">기록저장</button>
+        <button type="button" class="btn restartBtn"
+            style="background-color:#95c3e8; width:150px; height:50px; font-size: 18px; font-weight: bold;"
+            onmouseover="event.target.classList.add('Active')"
+            onmouseleave="event.target.classList.remove('Active')">다시하기</button>
 
     </div>
+
+    <div class="recordPanel">
+
+    </div>
+
 
     <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

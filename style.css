@@ -11,6 +11,9 @@
     height: 80px;
     margin-top:150px;
     margin-bottom: 30px;
+    opacity: 100%;
+    transition: opacity 1s;
+
 }
 
 .title, .resultText{
@@ -33,10 +36,36 @@
     background-color: #4bdb6a;
 }
 
-.active{
+.Active{
     background-color: white !important; 
     transition: all 0.1s;
 }
+
+.recordPanel{
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    width:400px;
+    padding: 30px;
+    transform: translateX(-200px);
+    margin-left:50%;
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+.recordPanel>p{
+    font-size: 24px;
+    margin-bottom:-5px;
+}
+
+.flash{
+    opacity: 50%;
+    transition: all 1s;
+}
+
+
+
 
 
 
